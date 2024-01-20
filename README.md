@@ -1,14 +1,21 @@
 Version v0.2.2
 
-This is a source code for a tool to generate lc3sim script and run on
-the LC-3 Simulator developed by Steven S. Lumetta.
+This is a source code for a tool to generate lc3sim script and should 
+run on the LC-3 Simulator developed by Steven S. Lumetta. 
+
+The tool works as: recieving filenames, call the assembler to assemble
+them, then write them into a script file, and finally call lc3sim to 
+execute them. Output of lc3sim may be optionally written in a file.
+
 The -f or --file option let the tool collect names following it, and 
-write them into a script file. Other arguments see -h or --help.
+write them into a script file. Other arguments see -h or --help. 
 Please use g++ to compile this file. The executable may be copied to 
-/usr/bin or /usr/local/bin if desired.
+/usr/bin or /usr/local/bin if desired. 
 
 Compile command: g++ lc3script.cpp -o lc3script 
+
 Install command: sudo cp ./lc3script /usr/bin
+
 The install directory can be modified with any directories with 
 environment settings.
 
@@ -27,7 +34,9 @@ v0.2        Calling lc3as assembler added
 v0.1        Initial release
 
 Copyright (c) 2023 by Yuanzhe Liu
+
 The MIT License (MIT)
+
 Permission is hereby granted, free of charge, to any person obtaining a copy 
 of this software and associated documentation files (the “Software”), to deal 
 in the Software without restriction, including without limitation the rights 
